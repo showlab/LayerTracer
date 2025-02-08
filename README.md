@@ -54,6 +54,7 @@ Use our `scripts/lora_merge.sh` template script to merge the LoRA （[flux_lora_
 chmod +x scripts/lora_merge.sh
 scripts/lora_merge.sh
 ```
+#### 2.2 Recraft model
 According to the actual situation, replace all model paths, file paths, and parameters in `scripts/image2sequence.sh`.
 
 The [icon_lora_weights](https://drive.google.com/file/d/1LZPvEnsCDvrVbGPvtcdZJ-bC9Q64oJE_/view?usp=sharing) is a Recraft model used for generating 9-grid black line icon images. Simply replace the corresponding paths in `scripts/image2sequence.sh` to use it.
