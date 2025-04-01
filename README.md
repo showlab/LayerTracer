@@ -46,6 +46,20 @@ chmod +x scripts/text2sequence.sh
 scripts/text2sequence.sh
 ```
 
+`NOTICE`
+
+When generating 9-grid images using `prompts`, please modify your prompt according to the `examples` provided below to avoid generating irrelevant content. Add this prefix to your prompt:
+```bash
+# nine-grid icon
+sks, This is a nine square grid image that describes the process of creating SVG icon images, ...
+# or
+sks, a set of nine icons, each representing ...
+```
+```bash
+# four-grid emoji
+sks, This is a four square grid image that describes the process of creating SVG emoji images, ...
+```
+
 ### 2. **Image 2 Sequence**
 #### 2.1 Merge LoRA to flux.1
 Use our `scripts/lora_merge.sh` template script to merge the LoRA （[flux_lora_icon_blackline](https://drive.google.com/file/d/1i2_mlGy-LwcZ0ief7b2SZyaaHu5nWf38/view?usp=drive_link) and [flux_lora_emoji](https://drive.google.com/file/d/1Be4UJHzaIoM_KTXTkZnaEFLLbdGfhe62/view?usp=drive_link)) to flux.1 checkpoints for further recraft training. Note that the merged model may take up **around 50GB** of your memory space.
